@@ -1,0 +1,114 @@
+*{  
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body{
+    background-color: rebeccapurple !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    min-height: 100vh;
+    
+}
+
+.pw__container{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(84, 51, 117);
+    width: 300px ;
+}
+
+.pw__header{
+    padding: 1rem;
+}
+
+.pw__body{
+    padding: 0 1rem 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+
+.pw{
+    background-color: rgb(97, 25, 170);
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    font-size: 1.2rem;
+    padding: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #ffffff94;
+}
+
+#copy{
+    backdrop-filter: blur(100px);
+}
+
+
+/* scroll bar  */
+
+/* width */
+::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c49b9b;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rebeccapurple;
+}
+
+
+.pw__header{
+    position: relative;
+}
+
+
+#copy{
+    background-color: rgba(56, 20, 92, 0.425);
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    opacity: .7;
+}
+
+ #copy:hover{
+    cursor: pointer;
+    opacity: 1;
+    /* transform: translate(0,100%); */
+ }
+
+.form__control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.generate {
+    background-color: #ecb602;
+    border: none;
+    color: rebeccapurple;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
